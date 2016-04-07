@@ -12,6 +12,7 @@ use App\Http\Requests;
 class UpdateController extends Controller
 {
     public function index() {
+        echo 'JDOIJDOHEOHOEHF';
         $listPage = file_get_contents('http://www.skysports.com/football/news');
         $crawler = new Crawler($listPage);
         $qs = $crawler->filter('a.news-list__figure');

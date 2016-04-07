@@ -13,11 +13,11 @@
 
 Route::get('/', 'MainController@index');
 
+Route::get('/update', 'UpdateController@index');
+
 Route::get('/{cat}', 'MainController@cat');
 
 Route::get('article/{dataid}', 'MainController@inner');
-
-Route::get('update', 'UpdateController@index');
 
 Route::group(['middleware' => ['web']], function () {
     //
